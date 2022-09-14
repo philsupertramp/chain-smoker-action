@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-docker run philsupertramp/chain-smoker:latest -v $(pwd):/usr/src/app/ python main.py -d $1
+docker run -v $(pwd):/usr/src/app/action philsupertramp/chain-smoker:latest python main.py -d action/$1
