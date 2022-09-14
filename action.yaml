@@ -1,0 +1,12 @@
+# action.yml
+name: 'chain-smoker test execution'
+description: 'Executes chain-smoker in given directory'
+inputs:
+  directory:
+    description: 'The directory to run in.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.directory }}
+
