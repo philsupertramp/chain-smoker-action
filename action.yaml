@@ -5,8 +5,9 @@ inputs:
   directory:
     description: 'The directory to run in.'
 runs:
-  using: 'docker'
-  image: 'philsupertramp/chain-smoker:latest'
+  using: 'composite'
   steps:
     - run: docker run philsupertramp/chain-smoker:latest -v $(pwd):/usr/src/app python main.py -d ${{ inputs.directory }}
-      shell: bash
+      using: 'docker'
+      image: 'philsupertramp/chain-smoker:latest'
+
