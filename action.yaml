@@ -6,7 +6,7 @@ inputs:
     description: 'The directory to run in.'
 runs:
   using: 'docker'
-  image: 'philsupertramp/chain-smoker:latest'
+  image: 'Dockerfile'
   args:
     - ${{ inputs.directory }}
   entrypoint: 'entrypoint.sh'
