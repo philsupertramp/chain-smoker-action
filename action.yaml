@@ -8,5 +8,5 @@ runs:
   using: 'docker'
   image: 'philsupertramp/chain-smoker:latest'
   args:
-    - ${{ inputs.directory }}
+    - ./entrypoint.sh ${{ inputs.directory }}
 
