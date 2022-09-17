@@ -9,8 +9,6 @@ The variable `directory` is available for configuration and lets you supply the 
 ## Example
 
 ```yaml
-on: [push]
-
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
@@ -21,7 +19,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Action step
-        uses: ./ # Uses an action in the root directory
+        uses: philsupertramp/chain-smoker-action@v1.0.1
         with:
           directory: 'examples'
 ```
