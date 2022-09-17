@@ -1,6 +1,10 @@
 # action.yml
 name: 'chain-smoker test execution'
 description: 'Executes chain-smoker in given directory'
+branding:
+  icon: 'check-square'
+  color: 'purple'
+
 inputs:
   directory:
     description: 'The directory to run in.'
