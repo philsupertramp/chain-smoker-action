@@ -10,6 +10,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Action step
-        uses: ./ # Uses an action in the root directory
+        uses: philsupertramp/chain-smoker-action@v1.0.0
         with:
           directory: 'examples'
